@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+} 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap');
+/* typograpy is the way a text is arranged and presented*/
+
+body{
+  background-color: antiquewhite;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 50px auto 50px;
+  grid-template-areas: "hd hd hd hd hd hd hd hd hd"
+                        "mn mn mn mn mn mn mn sb sb"
+                        "ft ft ft ft ft ft ft ft ft";
+  column-gap: 0.5rem;
+                    
+}
+.el{
+  background-color: rebeccapurple;
+  color: #fff;
+  display: grid;
+  place-content: center;
+}
+.header{
+  grid-area: hd;
+}
+.sidebar{
+  grid-area: sb;
+  background-color: #333;
+}
+.footer{
+  grid-area: ft;
+}
+.box{
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+}
+.container{
+  grid-area: mn;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr 2fr);
+  grid-auto-rows: minmax(150px, auto);
+  gap: 1rem 0.5rem;
+
+
+}
+.box:first-child{
+  background-color: blue;
+  grid-column: 1/4;
+  grid-row: 1/3;
+} 
+.box:nth-child(2){
+  background-color: purple;
+  grid-column: 1/5;
+  grid-row: 3/4;
+
+  display: grid;
+place-content: center;
+}

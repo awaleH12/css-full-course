@@ -1,0 +1,100 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+} 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap');
+/* typograpy is the way a text is arranged and presented*/
+html{scroll-behavior: smooth;}
+body{
+  font-size: 1.5rem;
+  background-color: antiquewhite;
+  font-family: 'Roboto', sans-serif;
+  min-height: 200vh;
+}
+.outer-container{
+  border: 3px dashed black;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+
+}
+.inner-container{
+  border: 3px solid blue ;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+ 
+}
+.box{
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  padding: 1rem;
+}
+
+.aboslute{
+  background-color: blue;
+  position:absolute;
+  top:0;
+  left: 0;
+}
+.relative{
+  background-color: violet;
+  position: relative;
+  top:400px;
+  left: 100px;
+}
+.fixed{
+  background-color: red;
+  position: fixed;
+  top:100px;
+  left:100px;
+}
+.sticky{
+  background-color: green;
+  position: sticky;
+  top: 50px;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+section{
+  height: 100vh;
+}
+
+.blue{background-color: blue;}
+.red{background-color: red;}
+.green{background-color: green;}
+
+header, footer{
+  text-align: center;
+  color: white;
+  height: 100px;
+}
+header{
+  font-size: 5rem;
+  position: sticky;
+  top: 0;
+}
+footer{
+  background-color: #333;
+  position: sticky;
+  bottom: 0;
+  font-size: 3rem;
+}
+a:visited{
+  color: white;
+}
+.social{
+  background-color: royalblue;
+  color: white;
+  font-size: inherit;
+  padding: 2rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+
+
+}

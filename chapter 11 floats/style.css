@@ -1,0 +1,75 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+} 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap');
+/* typograpy is the way a text is arranged and presented*/
+
+body{
+  font-size: 1.5rem;
+  background-color: antiquewhite;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* .float{
+  width: 30vw;
+  height: 30vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 2rem;
+  padding:16px;
+}
+.container{
+  background-color: rgb(224, 138, 32);
+  border: 1px solid;
+}
+p{
+  margin-left: 2rem;
+} */
+.float{
+  width: 30vw;
+  height: 30vw;
+  background-color: #000;
+  color: white;
+  padding: 1rem;
+}
+.left{
+  float: left;
+  margin-right: 1rem;
+}
+.right{
+  float: right;
+  margin-right: 1rem;
+}
+p{
+  margin: 1rem;
+}
+.clear{
+  clear: both;
+}
+section{
+  background-color: bisque;
+  border: 1px solid #333;
+  padding: 1rem;
+  display: flow-root;
+}
+/* .box_main{
+  text-align: center;
+  border: 1px solid #000;
+  background-color: bisque;
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+.box{
+  float: left;
+  border: 1px solid #333;
+  width: 30vw;
+  height: 30vw;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: #000;
+  color:white;
+} */
